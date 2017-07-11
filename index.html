@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Stroop Test - Στέργος Ζαμάγιας(321/2012054) - Διπλωματική Εργασία - GSR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+	<link rel="stylesheet" href="css/style.css" media="all" />
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="content">
+
+				<div class="header">
+					<h1>STROOP TEST</h1>
+					<h4>Στέργος Ζαμάγιας</h4>
+					<div class="delay_block">
+						<span>Delay(ms):</span>
+						<input type="text" value="2200" class="delay_value" />
+						<button class="delay_save_btn">SAVE</button>
+					</div>
+				</div>
+
+				<div class="notifications">
+					Trial: <span class="test_trials">-</span>
+					Errors: <span class="test_errors">-</span>
+					<span class="timer">0.000 s</span>
+				</div>
+
+				<div class="test">
+
+					<div class="title">Instructions: type the first letter of the name of the <span class="c1">C</span><span class="c2">O</span><span class="c3">L</span><span class="c4">O</span><span class="c5">R</span></div>
+
+					<div id="guess_word">CLICK START TEST</div>
+
+					<div id="progress_bar">
+						<div class="progress-bar progress-bar-warning animation"></div>
+					</div>
+
+					<div class="answers">
+						<div class="answer" data-answer="red">
+							<h3 class="c1">r</h3>
+							<span>red</span>
+						</div>
+						<div class="answer" data-answer="orange">
+							<h3 class="c2">o</h3>
+							<span>orange</span>
+						</div>
+						<div class="answer" data-answer="yellow">
+							<h3 class="c3">y</h3>
+							<span>yellow</span>
+						</div>
+						<div class="answer" data-answer="green">
+							<h3 class="c4">g</h3>
+							<span>green</span>
+						</div>
+						<div class="answer" data-answer="blue">
+							<h3 class="c5">b</h3>
+							<span>blue</span>
+						</div>
+						<div class="answer" data-answer="purple">
+							<h3 class="c6">p</h3>
+							<span>purple</span>
+						</div>
+					</div>
+
+					<div class="actions">
+						<a href="#" id="start_test" class="button">START TEST</a>
+						<a href="#" id="end_test" class="button disabled">END TEST</a>
+					</div>
+					
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
